@@ -1,0 +1,62 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-sans);
+    font-weight: var(--font-weight-3);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+h1 {
+    color: var(--orange-9);
+    margin-right: 0;
+    margin-left: 0;
+    animation: var(--animation-blink);
+    text-shadow: var(--shadow-6);
+}
+
+.bubble_photo {
+    height: 200px;
+    width: 200px;
+    background-color: var(--green-4);
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    margin-left: 55rem;
+    justify-content: flex-end;
+    border-radius: var(--radius-blob-4);
+    animation: var(--animation-float);
+    box-shadow: var(--shadow-5);
+}
+
+.top {
+    margin-top: -180px;
+}
+
+h2 {
+    animation: var(--animation-bounce);
+}
+
+p {
+    letter-spacing: var(--font-letterspacing-4);
+    font-weight: var(--font-weight-6);
+    line-height: var(--font-lineheight-4);
+    color: var(--grape-5);
+    padding-block: var(--size-5);
+    animation: var(--animation-pulse);
+    width: min(100% - 2rem, 50rem);
+    /* 100% width and 2rem for margin on small devices, 50rem for large devices*/
+    margin-inline: auto;
+    /* for left and right only*/
+}
